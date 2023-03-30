@@ -11,7 +11,7 @@ public class WeatherStation {
         weatherData.subscribe(statisticsDisplay);
         weatherData.subscribe(forecastDisplay);
 
-        // 결과가 순서가 바뀌어서 동작한다.
+        // 결과가 위에서 subscribe 시킨 순서와 다르게 순서가 바뀌어서 동작한다
         weatherData.setMeasurements(80, 65, 30.4f);
         System.out.println("------------------------------------------");
         weatherData.setMeasurements(82, 70, 29.2f);
